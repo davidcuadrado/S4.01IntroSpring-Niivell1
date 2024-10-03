@@ -34,8 +34,8 @@ Or run the JAR file directly:
 > java -jar target/filename.jar
 
 🔑 Key Features
-REST API: This project provides RESTful endpoints to manage resources via HTTP.
-Data Access with JPA: It uses Spring Data JPA to interact with a relational database.
+
+GET Requests: The project handles GET requests, allowing optional query parameters.
 
 🌐 Deployment
 Steps for deployment:
