@@ -1,6 +1,6 @@
 📄 Description
 
-This project serves as an introduction to Spring Boot, demonstrating how to build a basic web application with database access using JPA.
+This project provides an introduction to Spring Boot, focusing on building a web application that responds to GET requests, optionally accepting a single parameter.
 
 💻 Technologies Used
 
