@@ -1,63 +1,74 @@
-# S4.01IntroSpring-Nivell1
-
 📄 Description
 
-This is an introductory-level project using Spring Boot, designed to demonstrate how to create a basic application with web functionalities and database access using JPA.
+This project serves as an introduction to Spring Boot, demonstrating how to build a basic web application with database access using JPA.
 
-💻 Used technologies
+💻 Technologies Used
 
-· Eclipse IDE 2024-03 · Spring Boot 3.3.4
+Eclipse IDE 2024-03
 
-📋 Prerquisites
+Spring Boot 3.3.4
 
-· Java 17 or higher. · Maven 3.6+
+
+📋 Prerequisites
+
+Java 17 or higher
+
+Maven 3.6 or newer
+
 
 🛠️ Installation
-
 Clone the repository:
-git clone <REPOSITORY_URL>
-
+> git clone <REPOSITORY_URL>
 Navigate to the project directory:
-cd project-name Build the project using Maven: mvn clean install
+> cd project-name
+Build the project using Maven:
+> mvn clean install
 
 ▶️ Execution
 
-To run the application locally, you can use Maven or the jar file generated in the target folder:
+You can run the application locally using Maven or the generated JAR file.
 
 With Maven:
-
-mvn spring-boot:run
-
-Running the JAR file:
-
-java -jar target/filename.jar
+> mvn spring-boot:run
+Or run the JAR file directly:
+> java -jar target/filename.jar
 
 🔑 Key Features
+REST API: This project provides RESTful endpoints to manage resources via HTTP.
+Data Access with JPA: It uses Spring Data JPA to interact with a relational database.
 
-REST API: This project exposes RESTful endpoints to manage resources via HTTP. Data Access with JPA: The project uses Spring Data JPA to interact with the relational database.
+🌐 Deployment
+Steps for deployment:
+1. Build the application: Ensure the application is properly built by generating an executable JAR:
+> mvn clean package
+2. Prepare the environment:
+· Ensure a Java Runtime Environment (JRE) compatible with Java 17 or higher is available.
 
-🌐 Deployment To deploy the application to a production environment, follow these steps:
+· Set up a database (if necessary) and configure the application.properties file (e.g., database URL, credentials).
 
-Build the application: Ensure the application is properly built by generating an executable JAR:
-mvn clean package
+3. Deploying on Cloud/VM: Run the built JAR file directly on a VM or cloud platform:
+> java -jar target/filename.jar
+4. Containerized Deployment (Optional):
 
-Prepare the environment: · Make sure you have a Java Runtime Environment (JRE) compatible with Java 17 or higher. · Set up a database (if necessary), and configure the application’s properties (like database URL, credentials, etc.) in application.properties.
+· Build the Docker image:
+> mvn spring-boot:build-image
+· Run the Docker container:
+> docker run -p 8080:8080 your-image-name
+5. CI/CD Integration
+To automate the deployment process, integrate the repository with a CI/CD pipeline using tools like GitHub Actions, Jenkins, or GitLab CI.
 
-Deploying on a cloud service or VM: You can deploy the built JAR file directly on a virtual machine or cloud platform like AWS EC2, Google Cloud, or Azure. Use the following command to run the application:
 
-java -jar target/filename.jar
-
-Containerized Deployment (Optional): If using Docker, build the Docker image and run the container:
-mvn spring-boot:build-image docker run -p 8080:8080 your-image-name
-
-Ensure that the container is configured to run in your desired cloud environment or orchestration platform (e.g., Kubernetes).
-
-CI/CD Integration: For continuous deployment, integrate your repository with a CI/CD pipeline (e.g., GitHub Actions, Jenkins, GitLab CI) that automatically builds and deploys the application upon commits or merges to the main branch.
 🤝 Contributing
+1. Fork the repository
+2. Create a new branch:
+> git checkout -b feature/new-feature
+3. Make your changes and commit them:
+>git commit -m 'Add new feature'
+4. Push to the branch:
+> git push origin feature/new-feature
+5. Create a pull request
 
-Fork the repository.
-Create a new branch (git checkout -b feature/new-feature).
-Make your changes and commit (git commit -m 'Add new feature').
-Push to the branch (git push origin feature/new-feature).
-Create a pull request.
-🔗 Helpful links:
+
+🔗 Useful links
+· Spring Boot – Introduction to RESTful Web Services: https://www.geeksforgeeks.org/spring-boot-introduction-to-restful-web-services/
+· ¿Qué es una API REST?: https://www.ibm.com/es-es/topics/rest-apis
